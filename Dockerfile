@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.12
 
 # Installs latest Chromium (77) package.
 RUN apk add --no-cache \
