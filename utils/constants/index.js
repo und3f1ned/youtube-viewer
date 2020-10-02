@@ -1,4 +1,4 @@
-const IS_PROD = (process.env.NODE_ENV === 'production');
+const IS_PROD = process.env.NODE_ENV === 'production';
 const SHOULD_FORCE_DEBUG_LOGS = process.env.YOUTUBE_VIEWER_FORCE_DEBUG;
 const IP_GETTER_URL = 'https://api.ipify.org/';
 const URL_CONTAINER_FILE_NAME = 'urls.txt';
@@ -13,7 +13,7 @@ const URL_CONTAINER_FILE_NAME = 'urls.txt';
  */
 const START_PORT = 9052;
 const BATCH_COUNT = IS_PROD ? 6 : 1;
-const TOTAL_COUNT = 96;
+const TOTAL_COUNT = 66666;
 const VIEW_ACTION_COUNT = 10;
 const VIEW_DURATION = 50;
 const PAGE_DEFAULT_TIMEOUT = 600;
